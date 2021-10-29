@@ -5,6 +5,10 @@ import  { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout/Layout';
+import PageHero from '../components/PageHero/PageHero';
+import BreadCrumb from '../components/BreadCrumb/BreadCrumb';
+import PageSideBar from '../components/PageSidebar/PageSideBar';
+
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -29,10 +33,28 @@ const PageTemplate = ({ data }) => {
   return (
     <Layout>
       {console.log(data)}
-      <p>PageHero</p>
+      {data.wpPage.featuredImage ? (
+        <PageHero
+          img={data.wpPage.featuredImage.node.localFile.childImageSharp.gatsbyImageData}
+        />
+      ) : null}
       <Wrapper>
-        <p>Sidebar</p>
-        <p>Content</p>
+        <BreadCrumb parent={ data.wpPage.wpParent && data.wpPage.wpParent.node } />
+        <ContentWrapper>
+          <PageSideBar
+            parentChildren={
+              data.wpPage.wpParent && data.wpPage.wpParent.node.wpChildren.nodes
+            }
+            currentPage={data.wpPage}
+            parent={data.wpPage.wpParent && data.wpPage.wpParent.node.title}
+          >
+            {data.wpPage.wpChildren}
+          </PageSideBar>
+          <PageContent>
+            <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title}} />
+            <div dangerouslySetInnerHTML={{ __html: data.wpPage.content}} />
+          </PageContent>
+        </ContentWrapper>
       </Wrapper>
     </Layout>
   )
