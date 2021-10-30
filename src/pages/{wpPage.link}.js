@@ -32,7 +32,6 @@ const PageTemplate = ({ data }) => {
 
   return (
     <Layout>
-      {console.log(data)}
       {data.wpPage.featuredImage ? (
         <PageHero
           img={data.wpPage.featuredImage.node.localFile.childImageSharp.gatsbyImageData}
