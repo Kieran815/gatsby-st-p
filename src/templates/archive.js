@@ -3,13 +3,18 @@ import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout/Layout';
 import BreadCrumb from '../components/BreadCrumb/BreadCrumb';
+import ArchiveSideBar from '../components/ArchiveSidebar/ArchiveSidebar';
+import Pagination from '../components/Pagination/Pagination';
 
 // import ArchiveSideBar
 
 import { Wrapper, ContentWrapper, PageContent, StyledH2, StyledDate, StyledReadMore } from './archive.styles';
 
 // lower case `a` because it is a template, not a component
-const archiveTemplate = ({ data: {allWpPost} }) => (
+const archiveTemplate = ({
+  data: {allWpPost},
+  pageContext: { catId, catName, catUri, categories, numPages, currentPage },
+}) => (
   <Layout>
     <StaticImage
       // Change Image Source for Church
@@ -27,6 +32,33 @@ const archiveTemplate = ({ data: {allWpPost} }) => (
           title: "blog",
         }}
       />
+      <ContentWrapper>
+        <ArchiveSideBar
+          catId={catId}
+          categories={categories.edges}
+        />
+        <PageContent>
+          <h1 dangerouslySetInnerHTML={{ __html: catName }} />
+          {allWpPost.edges.map(post => (
+            <article key={post.node.id} className="entry-content">
+              <Link to={`/blog${post.node.uri}`}>
+                <StyledH2 dangerouslySetInnerHTML={{ __html: post.node.title }} />
+              </Link>
+              <StyledDate dangerouslySetInnerHTML={{ __html: post.node.date}} />
+              <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+              <StyledReadMore to={`/blog${post.node.uri}`}>
+                Read More
+              </StyledReadMore>
+              <div className="dot-divider" />
+            </article>
+          ))}
+          <Pagination
+            catUri={catUri}
+            page={currentPage}
+            totalPages={numPages}
+          />
+        </PageContent>
+      </ContentWrapper>
     </Wrapper>
   </Layout>
 )
@@ -47,7 +79,7 @@ export const pageQuery = graphql`
           } 
         } 
       }
-      skip: $skip,
+      skip: $skip
       limit: $limit
     ) {
       edges {

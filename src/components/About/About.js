@@ -5,7 +5,6 @@ import { Wrapper, AboutImage } from './About.styles';
 const About  = () => {
 
   const data = useAboutQuery();
-  console.log(data);
 
   const imageData = data.wpPage.featuredImage.node.localFile.publicURL;
 

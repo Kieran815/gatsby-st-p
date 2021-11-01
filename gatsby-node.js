@@ -12,6 +12,7 @@
 const path = require("path");
 
 exports.createPages = async({ graphql, actions, reporter }) => {
+  
   const { createPage } = actions;
 
   const archiveTemplate = path.resolve("./src/templates/archive.js");
@@ -51,7 +52,7 @@ exports.createPages = async({ graphql, actions, reporter }) => {
     const numberOfPosts = category.node.count;
     // round up for total number of pages
     const numPages = Math.ceil(numberOfPosts / postsPerPage);
-    // prevent category page creation for empty categoreies and uncategorized posts
+    // prevent category page creation for empty categories and uncategorized posts
     if(numberOfPosts > 0 || category.node.name !== "uncategorized") {
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
