@@ -18,7 +18,7 @@ export const Overlay = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: rgb(18,36,115);
     width: 100%;
     height: 100%;
     color: #fff;
@@ -39,7 +39,7 @@ export const Overlay = styled.div`
       }
 
       li.overlayActive {
-        color: #ee2562;
+        color: #fff;
       }
 
       a {
@@ -50,7 +50,8 @@ export const Overlay = styled.div`
         text-decoration: none;
 
         :hover {
-          color: #ee2562;
+          color: #fff;
+          text-decoration: underline overline #fff;
         }
       }
     }

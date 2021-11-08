@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `st-peters-ucc`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -29,7 +29,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/Rooster.jpg`, // This path is relative to the root of the site.
       },
     },
     {
@@ -38,9 +38,9 @@ module.exports = {
         // *** URL FOR WORDPRESS SITE, TO BE UPDATED
         url: `http://cakeit.local/graphql`,
         // url: 'https://stpetersuccfrankfortil.wordpress.com/graphql',
-        protocol: `https`,
-        hostingWPCOM: true,
-        useACF: true,
+        // protocol: `https`,
+        // hostingWPCOM: true,
+        // useACF: true,
       },
     },
     `gatsby-plugin-styled-components`,

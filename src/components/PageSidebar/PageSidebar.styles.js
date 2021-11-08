@@ -6,7 +6,7 @@ export const Wrapper = styled.aside`
 
   @media (min-width: 992px) {
     margin: 100px 15px 0 0;
-    padding-right: 20px;
+    padding-left: 30px;
   }
 `;
 

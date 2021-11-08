@@ -40,6 +40,10 @@ const PageTemplate = ({ data }) => {
       <Wrapper>
         <BreadCrumb parent={ data.wpPage.wpParent && data.wpPage.wpParent.node } />
         <ContentWrapper>
+          <PageContent>
+            <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title}} />
+            <div dangerouslySetInnerHTML={{ __html: data.wpPage.content}} />
+          </PageContent>
           <PageSideBar
             parentChildren={
               data.wpPage.wpParent && data.wpPage.wpParent.node.wpChildren.nodes
@@ -49,10 +53,6 @@ const PageTemplate = ({ data }) => {
           >
             {data.wpPage.wpChildren}
           </PageSideBar>
-          <PageContent>
-            <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title}} />
-            <div dangerouslySetInnerHTML={{ __html: data.wpPage.content}} />
-          </PageContent>
         </ContentWrapper>
       </Wrapper>
     </Layout>

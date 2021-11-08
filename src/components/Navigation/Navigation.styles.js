@@ -10,7 +10,7 @@ export const Wrapper = styled.nav`
   display: none;
 
   .nav-active {
-    color: #ee2562;
+    color: #fff;
   }
 
   @media (min-width: 992px) {
@@ -34,7 +34,7 @@ export const Wrapper = styled.nav`
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
       text-decoration: none;
-      color: #000;
+      color: #fff;
 
       div {
         margin: -4px 0 0 5px;
@@ -50,9 +50,29 @@ export const Wrapper = styled.nav`
     display: block;
   }
 
-  ul li a:hover {
-    color: #ee2562;
+  ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
+
+  ul li a:hover {
+    color: #fff;
+    
+  }
+
+  ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
 
   ul ul {
     animation: fadeInMenu 0.3s both ease-in;
@@ -62,7 +82,7 @@ export const Wrapper = styled.nav`
     margin: 0;
     top: 30px;
     text-transform: none;
-    background: #fff;
+    background: rgb(18,36,115);
     padding: 15px 10px 10px 10px;
     box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
   }
@@ -76,6 +96,7 @@ export const Wrapper = styled.nav`
     padding: 5px 10px;
     text-decoration: none;
     white-space: nowrap;
+    color: #fff;
   }
 
   @keyframes fadeInMenu {

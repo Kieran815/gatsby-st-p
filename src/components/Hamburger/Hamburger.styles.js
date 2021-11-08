@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const HamburgerButton = styled.div`
-  img {
+  svg {
+    color: #fff;
     position: fixed;
     display: block;
     z-index: 100000;

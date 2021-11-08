@@ -19,6 +19,7 @@ const IndexPage = () => (
     <Quote />
     <About />
   </Layout>
+  
 )
 
 export default IndexPage

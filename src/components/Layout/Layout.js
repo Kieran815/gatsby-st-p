@@ -7,6 +7,7 @@ import Header from '../Header/Header';
 import OverlayMenu from '../OverlayMenu/OverlayMenu';
 
 const Layout = ({ children }) => {
+	
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const handleOverlayMenu = () => {
