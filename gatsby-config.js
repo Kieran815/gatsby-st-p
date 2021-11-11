@@ -36,8 +36,8 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // *** URL FOR WORDPRESS SITE, TO BE UPDATED
-        url: `http://cakeit.local/graphql`,
-        // url: 'https://stpetersuccfrankfortil.wordpress.com/graphql',
+        // url: `http://cakeit.local/graphql`,
+        url: `https://stpetersucc.org/graphql`,
         // protocol: `https`,
         // hostingWPCOM: true,
         // useACF: true,
