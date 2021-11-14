@@ -18,7 +18,7 @@ const Header = () => {
           {/* Change for Church */}
           <img src={Logo} alt={site.siteMetadata.title} />
         </Link>
-        <Navigation menu={wpMenu.menuItems.nodes} />
+        {/* <Navigation menu={wpMenu.menuItems.nodes} /> */}
       </Content>
     </Wrapper>
   )

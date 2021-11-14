@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 		<>
 			<GlobalStyles />
 			<Hamburger  handleOverlayMenu={handleOverlayMenu}/>
-			<OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu} />
+			{/* <OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu} /> */}
 			<Header />
 			<Primary>{children}</Primary>
 			<Footer />

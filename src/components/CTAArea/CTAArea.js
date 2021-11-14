@@ -6,14 +6,14 @@ import CTA from '../CTA/CTA';
 const CTAArea = () => {
 
   const { cta } = useCTAQuery();
-
+  console.log(data);
   return (
     <Wrapper>
       {new Array(3).fill("").map((element, i) => (
         <CTA
           key={i}
           image={
-            cta.ACF_HomePage[`cta${i+1}Image`].localFile.childImageSharp.gatsbyImageData
+            cta.ACF_HomePage[`cta${i+1}Image`].sourceUrl
           }
           link={cta.ACF_HomePage[`cta${i+1}Link`]}
           text={cta.ACF_HomePage[`cta${i+1}Text`]}

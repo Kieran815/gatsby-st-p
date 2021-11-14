@@ -12,7 +12,8 @@ const Hero = () => {
   } = useHeroQuery();
 
   // helper function from gatsby
-  const imageData = getImage(data.heroImage.link)
+  const imageData = getImage(data.heroImage.sourceUrl);
+  console.log(imageData)
 
   return (
     <Wrapper>

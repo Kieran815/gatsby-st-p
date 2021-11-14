@@ -10,7 +10,7 @@ export const useHeroQuery = () => {
         ACF_HomePage {
           heroText
           heroImage {
-            link
+            sourceUrl
           }
         }
       }
