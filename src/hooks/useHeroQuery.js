@@ -10,7 +10,11 @@ export const useHeroQuery = () => {
         ACF_HomePage {
           heroText
           heroImage {
-            sourceUrl
+            localFile {
+              childImageSharp {
+                gatsbyImageData(width: 1920, placeholder:TRACED_SVG)
+              }
+            }
           }
         }
       }
