@@ -10,13 +10,14 @@ import { Wrapper, Content } from "./Quote.styles";
 
 const Quote = () => {
   const data = useQuoteQuery();
+  console.log(data);
   
   return (
     <Wrapper>
       <Content>
         <img src={QuoteImg} alt="Quote Icon" />
-        <h6>{data.wpPage.ACF_HomePage.citat1Text}</h6>
-        <p>{data.wpPage.ACF_HomePage.citat1Author}</p>
+        <h6>{data.wpPage.ACF_HomePage.quotation1Text}</h6>
+        <p>{data.wpPage.ACF_HomePage.quotation1Author}</p>
       </Content>
     </Wrapper>
   )

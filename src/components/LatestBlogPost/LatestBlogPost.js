@@ -1,12 +1,12 @@
- import React from 'react';
- import { Link } from 'gatsby';
- import { useLatestBlogPost } from '../../hooks/useLatestBlogPost';
- import { Wrapper } from './LatesBlogPost.styles';
+import React from 'react';
+import { Link } from 'gatsby';
+import { useLatestBlogPost } from '../../hooks/useLatestBlogPost';
+import { Wrapper } from './LatesBlogPost.styles';
 
 
- const LatestBlogPost = () => {
+const LatestBlogPost = () => {
 
-   const data = useLatestBlogPost();
+  const data = useLatestBlogPost();
 
   return (
     <Wrapper>
@@ -23,6 +23,6 @@
       </Link>
     </Wrapper>
   )
- }
+}
 
- export default LatestBlogPost;
+export default LatestBlogPost;
