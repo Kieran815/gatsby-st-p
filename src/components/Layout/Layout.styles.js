@@ -609,6 +609,21 @@ export const GlobalStyles = createGlobalStyle`
   pre tt:after {
     content: '';
   }
+
+  // custom classes for Wordpress:
+  .wp-block-button__link {
+    background: rgb(18,36,115);
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    :hover {
+      background: white;
+      color: rgb(18,36,115);
+      outline: 1px solid rgb(18,36,115);
+    }
+  }
+
+  // End custom classes for Wordpress
   @media only screen and (max-width: 480px) {
     html {
       font-size: 100%;

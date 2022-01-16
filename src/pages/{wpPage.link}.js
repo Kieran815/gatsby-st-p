@@ -97,8 +97,8 @@ export const pageQuery = graphql`
               nodes {
                 ... on WpPage {
                   id
-                  uri
                   title
+                  uri
                 }
               }
             }
@@ -107,5 +107,4 @@ export const pageQuery = graphql`
       }
     }
   }
-
 `
