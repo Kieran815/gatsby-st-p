@@ -2,13 +2,14 @@ import { useStaticQuery, graphql } from "gatsby";
 
 // check renaming `cta: wpPage...` with church wp page
 
+ // removed from line 11/12: , placeholder: TRACED_SVG
 export const useCTAQuery = () => {
   const data = useStaticQuery(graphql`
 
     fragment ctaImage on WpMediaItem {
       localFile {
         childImageSharp {
-          gatsbyImageData(width: 720, placeholder: TRACED_SVG)
+          gatsbyImageData(width: 720)
         }
       }
     }

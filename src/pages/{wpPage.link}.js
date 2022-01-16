@@ -60,7 +60,7 @@ const PageTemplate = ({ data }) => {
 }
 
 export default PageTemplate;
-
+// removed from line 75/76: , placeholder: TRACED_SVG
 export const pageQuery = graphql`
   query($id: String!) {
     wpPage(id: { eq: $id }) {
@@ -73,7 +73,7 @@ export const pageQuery = graphql`
           id
           localFile {
             childImageSharp {
-              gatsbyImageData(width: 1920, placeholder: TRACED_SVG)
+              gatsbyImageData(width: 1920)
             }
           }
         }

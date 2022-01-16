@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby"
 
 // look into line `wpPage(databaseId: {eq: 47}) {` if issue with changing hero image for church site
-
+// removed from line 15/16: , placeholder:TRACED_SVG
 export const useHeroQuery = () => {
   const data = useStaticQuery(graphql`
     query HeroImageQuery {
@@ -12,7 +12,7 @@ export const useHeroQuery = () => {
           heroImage {
             localFile {
               childImageSharp {
-                gatsbyImageData(width: 1920, placeholder:TRACED_SVG)
+                gatsbyImageData(width: 1920)
               }
             }
           }
