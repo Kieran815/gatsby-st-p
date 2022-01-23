@@ -6,7 +6,7 @@ import tangoMail from '../../images/mail-icon.svg';
 const SidebarMessage = () => (
   <Wrapper>
     <div>
-      <img src={tangoMail} alt='cakeit-mail' />
+      <img src={tangoMail} alt='st-peters-mail' />
       <span>Mail list</span>
     </div>
     <p>

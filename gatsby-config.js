@@ -4,8 +4,9 @@ module.exports = {
     description: `Messages, News, and Information from St. Peters United Church of Christ in Frankfort, IL`,
     author: `@kmilligan`,
     // update site url
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://kmilligan.info/`,
   },
+  pathPrefil: '/gatsby-st-p',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
