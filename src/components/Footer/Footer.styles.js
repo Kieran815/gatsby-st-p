@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Wrapper = styled.footer`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   background: #212121;
   color: #fff;
-  /* text-align: center; */
-  /* height: 200px; */
+  margin-bottom: 0;
+  text-align: center;
+  height: 200px;
 
   a {
     color: #fff;
@@ -49,8 +50,10 @@ export const SocialMediaLinks = styled.div`
 `
 
 export const Signature = styled.div`
+  background: #212121;
   font-size: 0.75em;
-  height: 50px;
+  height: 100px;
+  width: 100%;
   padding-top: 20px;
-  text-align: right;
+  text-align: center;
 `

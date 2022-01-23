@@ -32,7 +32,7 @@ const Footer = () => {
       
 
       <Signature>
-        Copyright &copy; {new Date().getFullYear()} St. Peter's UCC. All Rights Reserved.<br/>
+        Copyright &copy; {new Date().getFullYear()} St. Peter's UCC. All Rights Reserved.
         Made with love by <a href="https://www.kmilligan.info" target="_blank" rel="noopener noreferrer">K. Milligan</a>.
       </Signature>
     </Wrapper>

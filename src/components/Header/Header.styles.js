@@ -18,9 +18,17 @@ export const Content = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 
-  img {
-    width: 200px;
-    margin: 0;
-    padding: 12px 0 0 0;
+  #homeLink {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: white;
+    }
+
+    img {
+      width: 75px;
+      margin: 12px 5px;
+    }
   }
 `;
