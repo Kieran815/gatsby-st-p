@@ -6,7 +6,7 @@ module.exports = {
     // update site url
     siteUrl: `https://kmilligan.info/`,
   },
-  pathPrefil: '/gatsby-st-p',
+  pathPrefix: '/gatsby-st-p',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
