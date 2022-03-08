@@ -8,15 +8,16 @@ const Footer = () => {
 
   return (
     <Wrapper>
+      <p><b>St. Peters UCC</b></p>
       <LocationWrapper>
         <div className="address">
           <a href="https://www.google.com/maps/place/St.+Peter's+Church/@41.495494,-87.8513537,17z/data=!3m1!4b1!4m5!3m4!1s0x880e135146058d7d:0x5fc99a174cba51ae!8m2!3d41.4954969!4d-87.8490492" target="_blank" rel="noopener noreferrer">
-            <p><b>St. Peters UCC</b></p>
             <p>12 West Sauk Trail</p>
             <p>Frankfort, IL 60423</p>
           </a>
         </div>
 
+        <a href="tel:+18154692220"><p>(815)469-2220</p></a>
         <div className="service-schedule">
           <div>
             <p><strong>Services:</strong><br/><span>Sundays @ 9:30a</span></p>
@@ -29,8 +30,6 @@ const Footer = () => {
         </SocialMediaLinks>
       </LocationWrapper>
       
-      
-
       <Signature>
         Copyright &copy; {new Date().getFullYear()} St. Peter's UCC. All Rights Reserved.
         Made with love by <a href="https://www.kmilligan.info" target="_blank" rel="noopener noreferrer">K. Milligan</a>.

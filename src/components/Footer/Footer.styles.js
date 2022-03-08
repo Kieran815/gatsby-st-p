@@ -8,6 +8,7 @@ export const Wrapper = styled.footer`
   background: #212121;
   color: #fff;
   margin-bottom: 0;
+  padding-top: 15px;
   text-align: center;
   height: 200px;
 
@@ -22,9 +23,10 @@ export const Wrapper = styled.footer`
 
   @media (max-width: 420px) {
     flex-direction: column;
-    > div {
-      padding: 10px 0;
-    }
+    height: 100%;
+    // > div {
+    //   padding: 10px 0;
+    // }
   }
 `;
 
@@ -37,6 +39,7 @@ export const LocationWrapper = styled.div`
   text-align: center;
   @media (max-width: 420px) {
     flex-direction: column;
+    height: 100%;
     > * {
       padding: 10px 0;
     }
@@ -51,7 +54,8 @@ export const SocialMediaLinks = styled.div`
 
 export const Signature = styled.div`
   background: #212121;
-  font-size: 0.75em;
+  font-size: 0.5em;
+  bottom: 5px;
   height: 100px;
   width: 100%;
   padding-top: 20px;
