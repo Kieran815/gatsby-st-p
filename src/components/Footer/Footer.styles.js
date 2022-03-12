@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const Wrapper = styled.footer`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
+  height: 100%;
   background: #212121;
   color: #fff;
   margin-bottom: 0;
   padding-top: 15px;
   text-align: center;
-  height: 200px;
 
   a {
     color: #fff;
@@ -23,10 +23,9 @@ export const Wrapper = styled.footer`
 
   @media (max-width: 420px) {
     flex-direction: column;
-    height: 100%;
-    // > div {
-    //   padding: 10px 0;
-    // }
+    > div {
+      padding: 10px 0;
+    }
   }
 `;
 
@@ -34,12 +33,12 @@ export const LocationWrapper = styled.div`
   width: 90%;
   padding: 20px 0;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   @media (max-width: 420px) {
     flex-direction: column;
-    height: 100%;
     > * {
       padding: 10px 0;
     }
@@ -48,15 +47,14 @@ export const LocationWrapper = styled.div`
 
 export const SocialMediaLinks = styled.div`
   a {
-    padding: 0 10px;
+    padding: 10px;
   }
 `
 
 export const Signature = styled.div`
   background: #212121;
   font-size: 0.5em;
-  bottom: 5px;
-  height: 100px;
+  height: 50px;
   width: 100%;
   padding-top: 20px;
   text-align: center;

@@ -43,12 +43,12 @@ export const Menu = styled.ul`
     letter-spacing: 1px;
 
     a:hover {
-      color: #ee2562;
+      color: #122473; // sidebar hover color
     }
   }
 
   .sidebar-highlighted {
-    color: #ee2562;
+    color: #122473;
   }
 
   p {

@@ -227,6 +227,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   img {
     max-width: 100%;
+    height: auto;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;

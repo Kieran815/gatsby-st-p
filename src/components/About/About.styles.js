@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
     text-align: left;
   }
 
+  .iFrameCal {
+    border: 3px solid green;
+  }
+
   .about-text {
     padding: 40px 20px 20px 40px;
 
