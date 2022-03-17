@@ -1,21 +1,19 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-// check renaming `cta: wpPage...` with church wp page
-
- // removed from line 11/12: , placeholder: TRACED_SVG
-export const useCTAQuery = () => {
+export const useCTAAreaQuery = () => {
   const data = useStaticQuery(graphql`
 
     fragment ctaImage on WpMediaItem {
       localFile {
         childImageSharp {
-          gatsbyImageData(width: 720)
+          gatsbyImageData(width: 720, placeholder: DOMINANT_COLOR)
         }
       }
     }
 
     query CTAQuery {
       cta: wpPage(databaseId: {eq: 2}) {
+        id
         ACF_HomePage {
           cta1Link
           cta1Text
@@ -35,6 +33,7 @@ export const useCTAQuery = () => {
         }
       }
     }
+  
   `)
   return data;
 }

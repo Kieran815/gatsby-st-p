@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 // removed from line 15/16: , placeholder:TRACED_SVG
 export const useHeroQuery = () => {
   const data = useStaticQuery(graphql`
-    query HeroImageQuery {
+    query HeroQuery {
       wpPage(databaseId: {eq: 2}) {
         id
         ACF_HomePage {
@@ -12,7 +12,7 @@ export const useHeroQuery = () => {
           heroImage {
             localFile {
               childImageSharp {
-                gatsbyImageData(width: 1920)
+                gatsbyImageData(width: 1920, placeholder: BLURRED)
               }
             }
           }

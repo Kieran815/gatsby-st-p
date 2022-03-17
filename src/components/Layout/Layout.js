@@ -20,7 +20,9 @@ const Layout = ({ children }) => {
 			<Hamburger  handleOverlayMenu={handleOverlayMenu}/>
 			<OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu} />
 			<Header />
-			<Primary>{children}</Primary>
+			<Primary>
+				{children}
+			</Primary>
 			<Footer />
 		</>
 	)

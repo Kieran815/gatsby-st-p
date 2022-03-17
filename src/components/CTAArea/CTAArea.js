@@ -1,15 +1,15 @@
 import React from 'react';
-import { useCTAQuery } from '../../hooks/useCTAQuery';
+import { useCTAAreaQuery } from '../../hooks/useCTAAreaQuery';
 import { Wrapper } from './CTAArea.styles';
 import CTA from '../CTA/CTA';
 
 const CTAArea = () => {
 
-  const { cta } = useCTAQuery();
-  console.log(data);
+  // const { cta } = useCTAAreaQuery();
+  // console.log(cta);
   return (
     <Wrapper>
-      {new Array(3).fill("").map((element, i) => (
+      {/* {new Array(3).fill("").map((element, i) => (
         <CTA
           key={i}
           image={
@@ -18,7 +18,9 @@ const CTAArea = () => {
           link={cta.ACF_HomePage[`cta${i+1}Link`]}
           text={cta.ACF_HomePage[`cta${i+1}Text`]}
         />
-      ))}
+      ))} */}
+
+      CTA Area
     </Wrapper>
   )
 }

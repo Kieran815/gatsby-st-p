@@ -29,6 +29,8 @@ const Footer = () => {
               <strong>Services:</strong>
               <br/>
               <span>Sundays @ 9:30a</span>
+              <br/>
+              <span>Communion First Sunday of Month</span>
               </p>
           </div>
         </div>
