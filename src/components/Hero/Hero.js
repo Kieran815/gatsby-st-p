@@ -11,8 +11,10 @@ const Hero = () => {
     wpPage: { ACF_HomePage: data },
   } = useHeroQuery();
 
+  console.log(data)
+
   // helper function from gatsby
-  const imageData = getImage(data.heroImage.sourceUrl);
+  const imageData = getImage(data.heroImage.localFile);
 
   console.log(imageData)
   return (
