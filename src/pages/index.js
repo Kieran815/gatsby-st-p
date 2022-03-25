@@ -9,7 +9,6 @@ import About from "../components/About/About"
 
 const IndexPage = () => (
   <Layout>
-    {console.log("Running Index.js")}
     <Seo title="Home" />
     <Hero />
     <CtaArea />

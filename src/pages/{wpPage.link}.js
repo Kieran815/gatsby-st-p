@@ -29,10 +29,9 @@ const PageContent = styled.article`
 `
 
 const PageTemplate = ({ data }) => {
-
+  
   return (
     <Layout>
-      {console.log(data)}
       {data.wpPage.featuredImage ? (
         <PageHero
           img={data.wpPage.featuredImage.node.localFile.childImageSharp.gatsbyImageData}
@@ -62,7 +61,6 @@ const PageTemplate = ({ data }) => {
 
 export default PageTemplate;
 
-// removed from line 75/76: , placeholder: TRACED_SVG
 export const pageQuery = graphql`
   query($id: String!) {
     wpPage(id: { eq: $id }) {
@@ -86,6 +84,7 @@ export const pageQuery = graphql`
             id
             uri
             title
+            menuOrder
           }
         }
       }
@@ -101,6 +100,7 @@ export const pageQuery = graphql`
                   id
                   title
                   uri
+                  menuOrder
                 }
               }
             }

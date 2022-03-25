@@ -14,6 +14,7 @@ const Hero = () => {
   // helper function from gatsby
   const imageData = getImage(data.heroImage.sourceUrl);
 
+  console.log(imageData)
   return (
     <Wrapper>
       <StyledImg image={imageData} alt="Hero Image" />
