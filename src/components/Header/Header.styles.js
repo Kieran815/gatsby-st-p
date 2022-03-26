@@ -30,5 +30,12 @@ export const Content = styled.div`
       width: 75px;
       margin: 12px 5px;
     }
+
+    @media (max-width: 450px) {
+      max-width: 80%;
+      h1 {
+        font-size: 25px;
+      }
+    }
   }
 `;

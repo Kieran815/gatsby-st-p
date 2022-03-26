@@ -12,7 +12,11 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Hero />
     <CtaArea />
-    {/* <LatestBlogPost /> */}
+    {/*
+    *** UNCOMMENT TO ACTIVATE ***
+    *Church needs events content manager, waiting on designation/updates
+    <LatestBlogPost /> 
+    */} 
     <Quote />
     <About />
   </Layout>

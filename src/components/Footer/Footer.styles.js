@@ -34,11 +34,12 @@ export const LocationWrapper = styled.div`
   padding: 20px 0;
   display: flex;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   text-align: center;
   @media (max-width: 420px) {
     flex-direction: column;
+    align-items: center;
     > * {
       padding: 10px 0;
     }

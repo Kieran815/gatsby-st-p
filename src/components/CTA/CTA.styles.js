@@ -16,6 +16,12 @@ export const CTAImage = styled.div`
   :hover img {
     transform: scale(1.1);
     filter: blur(2px);
+    
+  }
+  
+  :hover .ctaLink  {
+    background: blue;
+    // linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)));
   }
 
   @media (min-width: 768px) {
