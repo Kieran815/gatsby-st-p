@@ -3,7 +3,7 @@ import Seo from "../components/SEO/SEO"
 import Layout from "../components/Layout/Layout"
 import Hero from "../components/Hero/Hero"
 import CtaArea from "../components/CTAArea/CTAArea"
-import LatestBlogPost from "../components/LatestBlogPost/LatestBlogPost"
+// import LatestBlogPost from "../components/LatestBlogPost/LatestBlogPost"
 import Quote from "../components/Quote/Quote"
 import About from "../components/About/About"
 

@@ -7,15 +7,14 @@ const SidebarMessage = () => (
   <Wrapper>
     <div>
       <img src={tangoMail} alt='st-peters-mail' />
-      <span>Mail list</span>
+      <span>Join Our Mailing List</span>
     </div>
     <p>
-      Do you want to get updated when we publish new stuff?
       <br />
-      Just email us with your name and email adress
+      Send Us Your Name and Email to Get the Latest Updates on Events, Membership and News.
       <br />
       <br />
-      <a href='mailto:info@cakeitfakeit.com'>Email</a>
+      <a href='mailto:saintpeterscalendars@gmail.com'>Email</a>
     </p>
   </Wrapper>
 );
