@@ -27,8 +27,8 @@ export const Content = styled.div`
     }
 
     img {
-      width: 75px;
-      margin: 12px 5px;
+      height: 90px;
+      margin: 12px 10px;
     }
 
     @media (max-width: 450px) {

@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 export const StyledImg = styled(GatsbyImage)`
   max-height: 600px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   width: 100%;
 `
 
@@ -20,12 +20,14 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
+  margin-top: 10px;
 
   h1 {
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
     text-transform: none;
+    text-shadow: 2px 2px rgb(18,36,115);
     text-align: center;
 
     @media screen and (min-width: 768px) {

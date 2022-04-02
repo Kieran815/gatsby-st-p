@@ -24,8 +24,8 @@ export const Overlay = styled.div`
     color: #fff;
     padding: 40px;
 
-    .invertedLogo {
-      max-width: 200px;
+    .overlayLogo {
+      max-width: 100px;
       margin: 0 0 60px 0;
     }
 
@@ -71,5 +71,10 @@ export const Overlay = styled.div`
     :hover {
       transform: rotate(180deg);
     }
+  }
+
+  #overlayTitle {
+    color: white;
+    font-size: 30px;
   }
 `;
