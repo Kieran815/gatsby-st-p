@@ -41,6 +41,11 @@ module.exports = {
         // protocol: `https`,
         // hostingWPCOM: true,
         // useACF: true,
+        schema: {
+          timeout: 1000000,
+          perPage: 10,
+          requestConcurrency: 5,
+        },
       },
     },
     `gatsby-plugin-styled-components`,
