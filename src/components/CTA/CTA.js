@@ -7,7 +7,7 @@ import {
   CTAImageText
 } from './CTA.styles';
 
-const CTA = ({ image, link, text }) => (
+const Cta = ({ image, link, text }) => (
   <CTAImage>
     <StyledImg image={image} alt="CTA Image" />
     <Link to={link}>
@@ -18,4 +18,4 @@ const CTA = ({ image, link, text }) => (
   </CTAImage>
 )
 
-export default CTA;
+export default Cta;

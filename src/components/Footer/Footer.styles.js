@@ -21,6 +21,10 @@ export const Wrapper = styled.footer`
     padding: 0;
   }
 
+  .hide {
+    display: none;
+  }
+
   @media (max-width: 420px) {
     flex-direction: column;
     > div {

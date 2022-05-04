@@ -1,7 +1,3 @@
-// `47` from graph query corresponds to `post=47` on wp site
-// change `47` to whatever updated value is for church site
-// `citat` === `quote` in sweedish, change if using AdvancedCustomFields on church site
-
 import React from "react";
 import { useQuoteQuery } from "../../hooks/useQuoteQuery";
 // icon from quote image (double quote icon)
@@ -10,7 +6,6 @@ import { Wrapper, Content } from "./Quote.styles";
 
 const Quote = () => {
   const data = useQuoteQuery();
-  console.log(data);
   
   return (
     <Wrapper>

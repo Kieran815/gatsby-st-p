@@ -26,8 +26,6 @@ module.exports = {
         short_name: `St. Peter's UCC`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/Rooster.jpg`, // This path is relative to the root of the site.
@@ -36,11 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        // *** URL FOR WORDPRESS SITE, TO BE UPDATED
         url: `https://stpetersucc.org/graphql`,
-        // protocol: `https`,
-        // hostingWPCOM: true,
-        // useACF: true,
         schema: {
           timeout: 1000000,
           perPage: 10,
@@ -49,15 +43,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     font: [`Teko\:200, 400, 500, 600, 700`],
-    //     display: `swap`,
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

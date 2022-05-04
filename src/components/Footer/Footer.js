@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
       
         <SocialMediaLinks>
-          <a href="https://www.youtube.com/channel/UCwh08833xeuAZH6gUWmQyIg" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutubeSquare} size="3x" /></a>
-          <a href="https://www.facebook.com/StPetersUnitedChurchOfChristFrankfort/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} size="3x" /></a>
+          <a href="https://www.youtube.com/channel/UCwh08833xeuAZH6gUWmQyIg" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutubeSquare} size="3x" /><span className="hide">Youtube</span></a>
+          <a href="https://www.facebook.com/StPetersUnitedChurchOfChristFrankfort/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} size="3x" /><span className="hide">Facebook</span></a>
         </SocialMediaLinks>
       </LocationWrapper>
 
