@@ -35,10 +35,11 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: `https://stpetersucc.org/graphql`,
+        verbose: true,
         schema: {
           timeout: 1000000,
           perPage: 10,
-          requestConcurrency: 5,
+          requestConcurrency: 2,
         },
       },
     },
