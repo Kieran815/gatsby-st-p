@@ -3,10 +3,7 @@ module.exports = {
     title: `St. Peter's United Church of Christ, Frankfort, IL`,
     description: `Messages, News, and Information from St. Peters United Church of Christ in Frankfort, IL`,
     author: `@kmilligan`,
-    // update site url
-    siteUrl: `https://kmilligan.info/`,
   },
-  pathPrefix: '/gatsby-st-p',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -36,13 +33,17 @@ module.exports = {
       options: {
         url: `https://stpetersucc.org/graphql`,
         verbose: true,
+        protocol: https,
+        hostingWPCOM: false,
+        useACF: true,
         schema: {
           timeout: 1000000,
           perPage: 10,
-          requestConcurrency: 2,
+          requestConcurrency: 5,
         },
       },
     },
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-robots-txt'
   ],
 }
