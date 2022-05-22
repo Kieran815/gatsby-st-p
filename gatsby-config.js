@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `St. Peter's United Church of Christ, Frankfort, IL`,
+    siteUrl: `https://stpetersfrankfort.gtsb.io/`,
     description: `Messages, News, and Information from St. Peters United Church of Christ in Frankfort, IL`,
     author: `@kmilligan`,
   },
@@ -31,8 +32,6 @@ module.exports = {
       options: {
         url: `https://stpetersucc.org/graphql`,
         verbose: true,
-        hostingWPCOM: false,
-        useACF: true,
         schema: {
           timeout: 1000000,
           perPage: 10,
