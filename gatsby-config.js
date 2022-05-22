@@ -22,10 +22,8 @@ module.exports = {
         name: `st-peters-ucc`,
         short_name: `St. Peter's UCC`,
         start_url: `/`,
-        background_color: `#663399`,
-        // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/Rooster.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/Rooster.jpg`,
       },
     },
     {
@@ -33,13 +31,12 @@ module.exports = {
       options: {
         url: `https://stpetersucc.org/graphql`,
         verbose: true,
-        protocol: https,
         hostingWPCOM: false,
         useACF: true,
         schema: {
           timeout: 1000000,
           perPage: 10,
-          requestConcurrency: 5,
+          requestConcurrency: 20,
         },
       },
     },
