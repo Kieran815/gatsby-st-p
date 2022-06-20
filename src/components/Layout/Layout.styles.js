@@ -1,7 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const Primary = styled.main`
-  padding: 110px 0 0 0;
+  // padding: 110px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const GlobalStyles = createGlobalStyle`

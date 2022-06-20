@@ -40,6 +40,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-robots-txt'
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sass`
   ],
 }

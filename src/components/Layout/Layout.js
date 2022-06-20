@@ -6,6 +6,8 @@ import Hamburger from '../Hamburger/Hamburger';
 import Header from '../Header/Header';
 import OverlayMenu from '../OverlayMenu/OverlayMenu';
 
+import './page_styles.scss'
+
 const Layout = ({ children }) => {
 	
 	const [menuOpen, setMenuOpen] = useState(false);

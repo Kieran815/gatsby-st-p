@@ -9,7 +9,6 @@ import PageHero from '../components/PageHero/PageHero';
 import BreadCrumb from '../components/BreadCrumb/BreadCrumb';
 import PageSideBar from '../components/PageSidebar/PageSideBar';
 
-
 const Wrapper = styled.div`
   max-width: 1180px;
   margin: 0 auto;
