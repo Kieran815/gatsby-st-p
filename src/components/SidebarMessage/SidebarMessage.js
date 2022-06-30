@@ -11,7 +11,9 @@ const SidebarMessage = () => (
     </div>
     <p>
       <br />
-      Send Us Your Name and Email to Get the Latest Updates on Events, Membership and News.
+      <span>
+        Send Us Your Name and Email to Get the Latest Updates on Events, Membership and News.
+      </span>
       <br />
       <br />
       <button>

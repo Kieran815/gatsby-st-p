@@ -15,7 +15,7 @@ const IndexPage = () => (
     {/*
     *** UNCOMMENT TO ACTIVATE ***
     *Church needs events content manager, waiting on designation/updates
-    <LatestBlogPost /> 
+    <LatestBlogPost />
     */} 
     <Quote />
     <About />

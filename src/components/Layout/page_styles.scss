@@ -8,9 +8,3 @@
 @import 'node_modules/@wordpress/base-styles/default-custom-properties';
 
 @import '~@wordpress/block-library/src/style.scss';
-
-$primary-color: green;
-
-body {
-  color: $primary-color;
-}

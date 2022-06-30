@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   text-align: center;
   padding: 40px 0;
   color: #fff;
+  min-width:100%;
 
   img {
     display: block;
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1080px;
+  
   margin: 0 auto;
 
   h6 {

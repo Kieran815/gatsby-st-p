@@ -5,12 +5,7 @@ import PageIcon from '../../images/page-icon.svg';
 import { Wrapper, Menu } from './PageSidebar.styles';
 
 const PageSideBar = ({ children, parentChildren, currentPage, parent }) => {
-
-  // console.log("Current Page: ", currentPage);
-  // console.log("Parent: ", parent);
-  // console.log("Children: ", children);
-  // console.log("ParentChildren: ", parentChildren);
-
+  
   // sorted child menu function  
   const sortedChildren = (prop) => {
     return function(a, b) {
