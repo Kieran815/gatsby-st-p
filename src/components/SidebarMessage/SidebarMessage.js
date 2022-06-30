@@ -14,7 +14,9 @@ const SidebarMessage = () => (
       Send Us Your Name and Email to Get the Latest Updates on Events, Membership and News.
       <br />
       <br />
-      <a href='mailto:saintpeterscalendars@gmail.com'>Email</a>
+      <button>
+        <a href='mailto:stpetersuccfrankfortil@gmail.com'>Email</a>
+      </button>
     </p>
   </Wrapper>
 );

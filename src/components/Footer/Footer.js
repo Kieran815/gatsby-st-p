@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, LocationWrapper, SocialMediaLinks, Signature } from './Footer.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookSquare, faYoutubeSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
 
 // Will have to redo footer with more info
 const Footer = () => {
@@ -38,6 +38,8 @@ const Footer = () => {
         <SocialMediaLinks>
           <a href="https://www.youtube.com/channel/UCwh08833xeuAZH6gUWmQyIg" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutubeSquare} size="3x" /><span className="hide">Youtube</span></a>
           <a href="https://www.facebook.com/StPetersUnitedChurchOfChristFrankfort/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} size="3x" /><span className="hide">Facebook</span></a>
+          <a href="https://www.instagram.com/explore/locations/1021226458/united-states/frankfort-illinois/st-peters-united-church-of-christ-frankfort/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagramSquare} size="3x" /><span className="hide">Facebook</span></a>
+
         </SocialMediaLinks>
       </LocationWrapper>
 
