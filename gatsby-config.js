@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `St. Peter's United Church of Christ, Frankfort, IL`,
+    // hosting for gatsby cloud url
     siteUrl: `https://stpetersfrankfort.gtsb.io/`,
     description: `Messages, News, and Information from St. Peters United Church of Christ in Frankfort, IL`,
     author: `@kmilligan`,
@@ -30,6 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        // update if church removes url service from WP, get default wp url
         url: `https://stpetersucc.org/graphql`,
         verbose: true,
         schema: {

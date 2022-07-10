@@ -2,9 +2,14 @@ import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const StyledImg = styled(GatsbyImage)`
-  max-height: 800px;
+  max-height: auto;
   // margin-bottom: 60px;
   width: 100%;
+
+    @media(max-width: 450px) {
+    height: auto;
+    margin-top: 110px;
+  }
 `
 
 export const Wrapper = styled.div`

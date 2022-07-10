@@ -17,7 +17,7 @@ const Header = () => {
         <Link id="homeLink"  to="/">
           <img src={UCC_Logo} alt={site.siteMetadata.title} /><h1>St. Peter's UCC</h1>
         </Link>
-        <Navigation menu={wpMenu.menuItems.nodes} />
+        <Navigation id="header-nav" menu={wpMenu.menuItems.nodes} />
       </Content>
     </Wrapper>
   )

@@ -16,6 +16,7 @@ export const Content = styled.div`
   height: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  margin-right: 100px;
 
   #homeLink {
     display: flex;
@@ -31,9 +32,8 @@ export const Content = styled.div`
     }
 
     @media (max-width: 450px) {
-      max-width: 80%;
       h1 {
-        font-size: 25px;
+        font-size: 20px;
       }
     }
   }
