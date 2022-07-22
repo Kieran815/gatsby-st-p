@@ -9,7 +9,7 @@ const CTAArea = () => {
 
   return (
     <Wrapper>
-      {new Array(3).fill("").map((element, i) => (
+      {new Array(4).fill("").map((element, i) => (
         <Cta
           key={i}
           image={

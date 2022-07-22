@@ -21,6 +21,8 @@ export const useCTAAreaQuery = () => {
           cta2Text
           cta3Link
           cta3Text
+          cta4Link
+          cta4Text
           cta1Image {
             ...ctaImage
           }
@@ -28,6 +30,10 @@ export const useCTAAreaQuery = () => {
             ...ctaImage
           }
           cta3Image {
+            ...ctaImage
+          }
+
+          cta4Image {
             ...ctaImage
           }
         }
